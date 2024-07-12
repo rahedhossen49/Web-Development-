@@ -3,9 +3,9 @@
 <?php
 
 
-//! Pyramid Pattern
+// //! Pyramid Pattern
 
-//*OutPut
+// //*OutPut
 
 //    *
 //   ***
@@ -15,32 +15,33 @@
 $rows = 4;
 
 for ($i = 1; $i <= $rows; $i++) {
-  // Print leading spaces
   for ($j = $i; $j < $rows; $j++) {
-    echo "&nbsp;";
+    echo "&nbsp;&nbsp;&nbsp";
   }
-  // Print stars
-  for ($j = 0; $j < (2 * $i - 1); $j++) {
-    echo "*";
+  for ($j = 0; $j <= (2 * $i - 2); $j++) {
+    echo "* ";
   }
   echo "<br>";
 }
 
 
+echo "<br>";
 
+echo "<hr>";
 echo "<br>";
 
 
-//!  Pattern
 
-//*OutPut
+
+// //!  Pattern
+
+// //*OutPut
 
 // ********
 // ********
 // ********
 // ********
 // ********
-
 
 for ($i = 0; $i < 5; $i++) {
 
@@ -50,9 +51,6 @@ for ($i = 0; $i < 5; $i++) {
 
   echo "<br>";
 }
-
-
-
 
 
 
