@@ -5,16 +5,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <title>Document</title>
+  <title>Styled Form</title>
+  <style>
+    .form-section {
+      margin-top: 5rem;
+      padding: 2rem;
+      background-color: white;
+      border-radius: 0.5rem;
+    }
+
+    .custom-input {
+      height: 40px;
+      width: 300px;
+    }
+  </style>
 </head>
 
 <body>
-  <section class="form" class="mt-5 .text-primary">
+  <section class="form-section text-primary">
     <div class="container">
-      <div class="row">
-        <div class="row">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
           <div class="main_container js-center">
-            <form action="./env.php" method=$_GET>
+            <form action="./env.php" method="GET">
               <div class="mb-3">
                 <label for="exampleInputName" class="form-label">Name</label>
                 <input type="text" class="form-control custom-input" id="exampleInputName" placeholder="Enter Your Name" name="Name">
@@ -34,6 +47,7 @@
       </div>
     </div>
   </section>
+
 </body>
 
 </html>
