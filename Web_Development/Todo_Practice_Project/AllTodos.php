@@ -1,8 +1,8 @@
 <?php
 
 session_start();
-include('./Database/env.php'); 
-
+include('./Database/env.php'); // Ensure this path is correct
+// Remove include('./controller/todoDelete.php'); from here
 
 $Query = "SELECT * FROM todo ORDER BY id DESC";
 $res = mysqli_query($connection, $Query);

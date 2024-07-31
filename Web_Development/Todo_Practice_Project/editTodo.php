@@ -7,7 +7,7 @@ $res = mysqli_query($connection, $query);
 $post = mysqli_fetch_assoc($res);
 
 if (!$post) {
-  header('Location:./404.php');
+  header('Location:404.php');
   exit();
 }
 ?>
